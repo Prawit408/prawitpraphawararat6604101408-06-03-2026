@@ -27,7 +27,11 @@ if (!fs.existsSync(logsDir)) {
 
 // health check for render
 app.get('/api/health', (req, res) => {
-  res.json({ ok: true });
+  res.json({
+    ok: true,
+    version: "1.0.1",
+    timestamp: new Date().toISOString()
+  });
 });
 
 // demo endpoint เดิมจาก Lab 1.2

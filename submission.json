@@ -1,0 +1,11 @@
+{
+    "student_id": "6604101408",
+    "name": "นาย ปราวิต ประภาวรารัตน์",
+    "github_repo": "https://github.com/Prawit408/prawitpraphawararat6604101408-06-03-2026.git",
+    "backend_base_url": "https://prawitpraphawararat6604101408-06-03-2026.onrender.com",
+    "frontend_url": "https://proxyza2.netlify.app/#/",
+    "api": {
+        "health": "https://prawitpraphawararat6604101408-06-03-2026.onrender.com/api/health",
+        "tasks": "https://prawitpraphawararat6604101408-06-03-2026.onrender.com/api/tasks"
+    }
+}

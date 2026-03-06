@@ -22,6 +22,10 @@ app.get('/', (req, res) => {
     res.send('Backend is running! Access /api/demo for data.');
 });
 
+app.get('/api/health', (req, res) => {
+    res.json({ ok: true });
+});
+
 app.get('/api/demo', (req, res) => {
     const logMessage = `Request at ${new Date().toISOString()}: ${req.ip}\n`;
     fs.appendFileSync(path.join(logsDir, 'access.log'), logMessage);

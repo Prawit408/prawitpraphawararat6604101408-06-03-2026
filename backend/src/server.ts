@@ -25,6 +25,11 @@ if (!fs.existsSync(logsDir)) {
   fs.mkdirSync(logsDir, { recursive: true });
 }
 
+// health check for render
+app.get('/api/health', (req, res) => {
+  res.json({ ok: true });
+});
+
 // demo endpoint เดิมจาก Lab 1.2
 app.get('/api/demo', (req, res) => {
   const logMessage = `Request at ${new Date().toISOString()}: ${req.ip}\n`;
